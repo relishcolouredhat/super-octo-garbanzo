@@ -1,7 +1,5 @@
-<html><body>
-<div>window.location.href</div> 
-0.0.2
-
+<html>
+<head>
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -15,6 +13,14 @@ function GetURLParameter(sParam)
         }
     }
 }​
+</head>
+
+
+<body>
+<div>window.location.href</div> 
+0.0.2
+
+
 </body>
 
 
