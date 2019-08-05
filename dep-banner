@@ -2,14 +2,19 @@
 <div>window.location.href</div> 
 0.0.2
 
-    <script>
-    function getURL() {
-        alert("The URL of this page is: " + window.location.href);
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
     }
-    </script>
-     
-    <button type="button" onclick="getURL();">Get Page URL</button>
-
+}​
 </body>
 
 
